@@ -29,10 +29,15 @@ A C++ console application for managing students and courses. This project demons
 
 ---
 ├── Person.h # Base class (all methods inline)
+
 ├── Person.cpp # Empty file (implementation in header)
+
 ├── Student.h # Derived class declaration
+
 ├── Student.cpp # Derived class implementation
+
 ├── Mangment_System.cpp # Main program with menu interface
+
 └── README.md # This file
 
 ## How to Compile and Run
