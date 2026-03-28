@@ -26,6 +26,7 @@ A C++ console application for managing students and courses. This project demons
 
 ## File Structure
 
+
 ---
 ├── Person.h # Base class (all methods inline)
 ├── Person.cpp # Empty file (implementation in header)
@@ -36,11 +37,8 @@ A C++ console application for managing students and courses. This project demons
 
 ## How to Compile and Run
 
-### Linux / Mac
+### Linux / Mac / Windows
 
-```bash
-g++ -std=c++11 -o student_system Student.cpp Mangment_System.cpp
-./student_system
 g++ -std=c++11 -o student_system.exe Student.cpp Mangment_System.cpp
 student_system.exe
 ===============================
