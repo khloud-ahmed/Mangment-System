@@ -120,56 +120,81 @@ Test	Action	Expected Result	Status
 UML Class Diagram
 text
 ┌─────────────────────────┐
+
 │        Person           │
 ├─────────────────────────┤
 │ # name : string         │
+
 ├─────────────────────────┤
+
 │ + Person(n: string)     │
+
 │ + getName() : string    │
+
+
 │ + setName(n: string)    │
+
 └─────────────────────────┘
            ▲
            │ (inheritance)
            │
 ┌─────────────────────────┐
+
 │        Student          │
 ├─────────────────────────┤
+
 │ - id : int              │
 │ - gpa : double          │
+
 │ - courses : set<string> │
 ├─────────────────────────┤
+
 │ + Student(i,n,g)        │
 │ + getId() : int         │
+
 │ + getGpa() : double     │
 │ + setGpa(g: double)     │
+
 │ + enrollCourse(course)  │
 │ + displayCourses()      │
+
 │ + displayInfo()         │
+
 └─────────────────────────┘
+
 Limitations
 Data is stored in memory only (lost when program exits)
 
+
 No file I/O for data persistence
+
 
 Single-user console application
 
+
 No GUI interface
+
 
 Future Enhancements
 Add file I/O to save/load student data
 
 Implement course management system
 
+
 Add search by name feature
+
 
 Create GUI version
 
+
 Add GPA calculation per semester
+
 
 Author
 Name:Khloud Ahmed Abeelkawy
 Student ID: 12261
 Course: C++ Programming
+
 
 References
 cppreference.com - C++ Standard Library Reference
