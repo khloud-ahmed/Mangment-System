@@ -144,29 +144,35 @@ Test	Action	Expected Result	Status
 
 ## UML Class Diagram
 
-```mermaid
-classDiagram
-    class Person {
-        # string name
-        +Person(n: string)
-        +getName() string
-        +setName(n: string)
-    }
-    
-    class Student {
-        - int id
-        - double gpa
-        - set~string~ courses
-        +Student(i: int, n: string, g: double)
-        +getId() int
-        +getGpa() double
-        +setGpa(g: double)
-        +enrollCourse(course: string)
-        +displayCourses()
-        +displayInfo()
-    }
-    
-    Person <|-- Student
+┌─────────────────────────────────┐
+│ Person │
+├─────────────────────────────────┤
+│ # name : string │
+├─────────────────────────────────┤
+│ + Person(n: string) │
+│ + getName() : string │
+│ + setName(n: string) : void │
+└─────────────────────────────────┘
+▲
+│ (inheritance)
+│
+┌─────────────────────────────────┐
+│ Student │
+├─────────────────────────────────┤
+│ - id : int │
+│ - gpa : double │
+│ - courses : set<string> │
+├─────────────────────────────────┤
+│ + Student(i: int, n: string, g: double) │
+│ + getId() : int │
+│ + getGpa() : double │
+│ + setGpa(g: double) : void │
+│ + enrollCourse(course: string) : void │
+│ + displayCourses() : void │
+│ + displayInfo() : void │
+└─────────────────────────────────┘
+
+
 Limitations
 Data is stored in memory only (lost when program exits)
 
